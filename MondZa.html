@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="/champ.js"></script>
+    <title>รถดี - ให้เรื่องรถมันจบที่เรา</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Top Navigation Menu -->
+      <div class="bg-blue-950 text-white flex justify-between">
+        <a href="#home" class="active"><img src="/assets/logo.png" alt=""></a>
+       
+        <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
+          <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
+        </a>
+        <!-- Desktop -->
+        <ul class="flex items-center gap-16 mr-6 max-md:hidden">
+          <li><a class="hover:underline" href="#">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="$">ต้องการซื้อ</a></li>
+          <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+          <li><a class="hover:underline" href="$"><img src="/assets/🦆 icon _United States_.png" alt=""></a></li>
+          <li><a class="hover:underline" href="#"><img src="/assets/login.png" alt=""></a></li>
+        </ul>
+      </div>
+      <!-- mobile -->
+      <ul id="burger" class="flex flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
+          <li><a class="" href="#news">บริการเช่า</a></li>
+          <a href="#contact">ต้องการซื้อ</a>
+          <a href="#about">ต้องการขาย</a>
+          <button class="bg-gray-800 py-2  w-full">login</button>
+      </ul>
+      </nav>
+  </header>
+  <section id="hero" class="relative">
+    <!-- Slideshow -->
+    <div class="relative w-flex overflow-hidden h-flex">
+        <div class="carousel-item active">
+            <img src="Assets/carModel/AudiAQ7_TFSI.jpg" class="w-flex h-flex object-cover" alt="AudiAQ7_TFSI">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/bmw-3-series-sedan.jpg" class="w-auto h-auto object-cover" alt="bmw-3-series">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/BMW-520dM Sport Pro.jpg" class="w-auto h-auto object-cover" alt="BMW-520dM">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/HondaCivic.png" class="w-auto h-auto object-cover" alt="bmw-x5">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/bmw-x5.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/hondaCRV.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/hondaAccord.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/Hyundai  ELANTRA.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/Hyundai-Santa_Fe.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/HyundaiTucson N-Line.jpg" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/Mazda BT-50 Double Cab.png" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <div class="carousel-item hidden">
+            <img src="Assets/carModel/Mazda BT-50 Double Cab.png" class="w-auto h-auto object-cover" alt="Slide 3">
+        </div>
+        <!-- Previous and Next buttons -->
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2" onclick="prevSlide()">Previous</button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2" onclick="nextSlide()">Next</button>
+    </div>
+</section>
+  <section id="grid" class="p-4">
+    <div class="grid grid-rows-1 grid-cols-12 gap-2">
+        <img src="Assets/logo/audi-logo-2009-download copy.png" class="w-auto h-auto" alt="audi">
+        <img src="Assets/logo/bmw-logo-2020-gray-download.webp" class="w-auto h-auto" alt="Image 2">
+        <img src="Assets/logo/jaguar-logo-2021-download.webp" class="w-auto h-auto" alt="Image 3">
+        <img src="Assets/logo/hyundai-logo-2011-download.png" class="w-auto h-auto" alt="Image 4">
+        <img src="Assets/logo/honda-logo-2000-full-download.png" class="w-auto h-auto" alt="Image 5">
+        <img src="Assets/logo/ford-logo-2017-download.png" class="w-auto h-auto" alt="Image 6">
+        <img src="Assets/logo/Mini-logo-2001-1920x1080.png" class="w-auto h-auto" alt="Image 7">
+        <img src="Assets/logo/tesla-logo-2004-download.png" class="w-auto h-auto" alt="Image 8">
+        <img src="Assets/logo/toyota-logo-2005-download.png" class="w-auto h-auto" alt="Image 9">
+        <img src="Assets/logo/mazda-logo-2018-vertical-download.png" class="w-auto h-auto" alt="Image 10">
+        <img src="Assets/logo/porsche-logo-2014-full-download.png" class="w-auto h-auto" alt="Image 11">
+        <img src="Assets/logo/Peugeot-logo-2010-1920x1080.png" class="w-auto h-auto" alt="Image 11">
+        <img src="Assets/logo/nissan-logo-2020-black.png" class="w-auto h-auto" alt="Image 11">
+    </div>
+</section>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+  function showSlide(index) {
+      slides.forEach((slide, i) => {
+          slide.classList.toggle('hidden', i !== index);
+          slide.classList.toggle('active', i === index);
+      });
+  }
+  function prevSlide() {
+      currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+      showSlide(currentSlide);
+  }
+  function nextSlide() {
+      currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+      showSlide(currentSlide);
+  }
+  document.addEventListener('DOMContentLoaded', () => showSlide(currentSlide));
+</script>
+</body>
+</html>

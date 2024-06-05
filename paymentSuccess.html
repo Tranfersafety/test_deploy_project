@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d596a85614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="flex flex-col items-center text-base">
+      <article
+        id="statusContainer"
+        class="flex flex-row max-w-[1145px] m-11 relative"
+      >
+        <div class="flex flex-col items-center">
+          <div
+            id="circleStatus"
+            class="w-16 h-16 bg-[#CDECFF] rounded-full grid place-content-center"
+          >
+            1
+          </div>
+          <p>กรอกข้อมูล</p>
+        </div>
+        <div class="w-52 h-1 bg-[#CDECFF] relative top-8"></div>
+        <div class="flex flex-col items-center mx-1">
+          <div
+            id="circleStatus"
+            class="w-16 h-16 bg-[#CDECFF] rounded-full grid place-content-center"
+          >
+            2
+          </div>
+          <p>ชำระเงิน</p>
+        </div>
+        <div class="w-52 h-1 bg-[#CDECFF] relative top-8"></div>
+        <div class="flex flex-col items-center">
+          <div
+            id="innerCircle"
+            class="w-16 h-16 rounded-full bg-[#1E3769] relative"
+          >
+            <div
+              id="leftCheck"
+              class="w-[4.5px] h-[16px] top-[29px] left-[22px] -rotate-45 rounded-full bg-white absolute"
+            ></div>
+            <div
+              id="rightCheck"
+              class="w-[4.5px] h-[31px] top-[16px] left-[36px] rotate-45 rounded-full bg-white absolute"
+            ></div>
+          </div>
+          <p>เช่ารถสำเร็จ</p>
+        </div>
+      </article>
+      <article class="flex flex-col items-center">
+        <div
+          id="outerCircle"
+          class="w-[258px] h-[258px] rounded-full bg-[#E5F4ED] mb-8 grid place-content-center"
+        >
+          <div
+            id="innerCircle"
+            class="w-[143px] h-[143px] rounded-full bg-[#23A26D] relative"
+          >
+            <div
+              id="leftCheck"
+              class="w-[10px] h-[35px] top-[65px] left-[50px] -rotate-45 rounded-full bg-white absolute"
+            ></div>
+            <div
+              id="rightCheck"
+              class="w-[10px] h-[70px] top-[35px] left-[80px] rotate-45 rounded-full bg-white absolute"
+            ></div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center leading-10">
+          <h1 class="font-semibold text-[32px]">การชำระเงินสำเร็จ !</h1>
+          <p class="text-[32px]">การชำระเงินของคุณได้เสร็จสิ้น</p>
+        </div>
+        <div
+          id="receipt"
+          class="mt-[55px] w-[550px] rounded-lg text-[24px] bg-[#F4FFFB] flex flex-col gap-14"
+        >
+          <div id="value" class="flex justify-between px-9 mt-8">
+            <p>จำนวน</p>
+            <p>3000 บาท</p>
+          </div>
+          <div id="status" class="flex justify-between px-9">
+            <p>สถานะการจ่ายเงิน</p>
+            <p>สำเร็จ</p>
+          </div>
+
+          <div id="detail" class="flex flex-col gap-14 px-9 border-t-[1px]">
+            <div id="code" class="flex justify-between mt-8">
+              <p>หมายเลขเช่า</p>
+              <p>RD1099092</p>
+            </div>
+            <diver id="typeOfPayMent" class="flex justify-between"
+              ><p>รูปแบบการจ่ายเงิน</p>
+              <p>PromptPay</p></diver
+            >
+            <div id="dat" class="flex justify-between">
+              <p>วันที่จ่ายเงิน</p>
+              <p>21 มิ.ย. 2568</p>
+            </div>
+            <div id="time" class="flex justify-between">
+              <p>เวลา</p>
+              <p>18 . 05 น.</p>
+            </div>
+          </div>
+          <a
+            href=""
+            class="h-[50px] m-3 rounded-lg bg-[#383838] text-white flex justify-center"
+          >
+            <input type="button" value="กลับหน้าหลัก" class="cursor-pointer"
+          /></a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

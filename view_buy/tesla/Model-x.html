@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/champ.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+
+    <section class="flex my-9 max-md:flex justify-center">
+        <!-- left -->
+         <div class=" relative md:w-1/2">
+       
+          <div class="show">
+            <img src="/assets/Tesla/Model x/000000028681_4f86ad50_ca30_4983_8860_751a6a107f42.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Tesla/Model x/000000179615_5c6b515a_6c7f_4e5f_aeb9_3c5f092179b5.jfif" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Tesla/Model x/000000322488_064dd512_adf5_4597_9712_1aa46d0c1c91.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Tesla/Model x/000000565956_56942d8b_f63f_461e_ac22_8b79ac474279.jfif" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Tesla/Model x/000000566377_6cf6dbea_44c5_4d59_a017_7c9d9173ef47.jfif" class="w-full">
+          </div>
+      
+          <div class="absolute w-full flex justify-between px-4 top-1/4 max-md:hidden text-3xl font-black  select-none">
+            <a class="cursor-pointer  backdrop-blur-sm bg-white/30  bg-gray-800	rounded-full px-4 hover:text-gray-500  " onclick="plusSlides(-1)">❮</a>
+            <a class="cursor-pointer backdrop-blur-sm bg-white/30  bg-gray-800 rounded-full	 px-4 hover:text-gray-500 " onclick="plusSlides(1)">❯</a>
+          </div>
+          
+          <div class=" flex w-1/6 md: my-2">
+          <img class="silde cursor-pointer" src="/assets/Tesla/Model x/000000028681_4f86ad50_ca30_4983_8860_751a6a107f42.jpg" onclick="currentSlide(1)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Tesla/Model x/000000179615_5c6b515a_6c7f_4e5f_aeb9_3c5f092179b5.jfif" onclick="currentSlide(2)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Tesla/Model x/000000322488_064dd512_adf5_4597_9712_1aa46d0c1c91.jpg" onclick="currentSlide(3)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Tesla/Model x/000000565956_56942d8b_f63f_461e_ac22_8b79ac474279.jfif" onclick="currentSlide(4)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Tesla/Model x/000000566377_6cf6dbea_44c5_4d59_a017_7c9d9173ef47.jfif" onclick="currentSlide(5)" alt="">
+          
+        </div>
+
+        <div class="md:hidden">
+          <h1 class="mb-2 font-black text-xl mx-4 my-4"> Tesla 
+              Model X</h1>
+          
+      </div>
+      <section>
+        <main>
+      <p class="mt-3 mx-4 ">
+        ดีไซน์ล้ำสมัยและประสิทธิภาพไฟฟ้า Tesla Model X
+      </p>
+          <h4 class="text-xl font-medium my-2 mx-4">Feature</h4>
+          
+          <li class="mx-4 max-md:my-2">ประตูแบบ Falcon wing
+          </li>
+          <li class="snap-center mx-4 max-md:my-2" >ตัวเลือกแบตเตอรี่ระยะทางไกล </li>
+          <li class="mx-4 max-md:my-2">ฟีเจอร์ Autopilot ขั้นสูง</li>
+         
+        </main>
+          <div class="flex justify-between my-4 mx-4">
+              <h2 class="md:hidden text-xl ">ราคา</h2>
+              <h2 class="md:hidden text-xl font-black"> ฿3,000/วัน</h2>
+          </div>
+          <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
+      </section>
+    </div> 
+
+        </div>
+       
+           
+        <!-- right -->
+        <div class="my-9 mx-9 max-md:hidden">
+            <h1 class="mb-2 font-black text-xl"> Tesla
+                Model X</h1>
+            <h2 class="mb-2 text-xl">ราคา ฿3,000/วัน</h2>
+            <button class="bg-gray-500 text-white px-4 py-2 hover:bg-blue-950 ">Booking</button>
+        </div>
+    </section>
+  </body>

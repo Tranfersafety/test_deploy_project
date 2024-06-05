@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d596a85614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="flex flex-col items-center text-base">
+      <article
+        id="statusContainer"
+        class="flex flex-row max-w-[1145px] m-11 relative"
+      >
+        <div class="flex flex-col items-center">
+          <div
+            id="innerCircle"
+            class="w-16 h-16 rounded-full bg-[#1E3769] relative"
+          >
+            <div
+              id="leftCheck"
+              class="w-[4.5px] h-[16px] top-[29px] left-[22px] -rotate-45 rounded-full bg-white absolute"
+            ></div>
+            <div
+              id="rightCheck"
+              class="w-[4.5px] h-[31px] top-[16px] left-[36px] rotate-45 rounded-full bg-white absolute"
+            ></div>
+          </div>
+          <p>กรอกข้อมูล</p>
+        </div>
+        <div class="w-52 h-1 bg-[#CDECFF] relative top-8"></div>
+        <div class="flex flex-col items-center mx-1">
+          <div
+            id="circleStatus"
+            class="w-16 h-16 bg-[#CDECFF] rounded-full grid place-content-center"
+          >
+            2
+          </div>
+          <p>ชำระเงิน</p>
+        </div>
+        <div class="w-52 h-1 bg-[#CDECFF] relative top-8"></div>
+        <div class="flex flex-col items-center">
+          <div
+            id="circleStatus"
+            class="w-16 h-16 bg-[#CDECFF] rounded-full grid place-content-center"
+          >
+            3
+          </div>
+          <p>เช่ารถสำเร็จ</p>
+        </div>
+      </article>
+      <article
+        id="heroContainer"
+        class="max-w-[1145px] max-h-screen flex gap-x-[19px]"
+      >
+        <div id="inform" class="flex flex-col w-[760px]">
+          <div
+            id="login"
+            class="h-[74px] mb-6 flex justify-between items-center bg-[#CDECFF] rounded-lg text-2xl font-semibold"
+          >
+            <p class="m-[24px]">เข้าสู่ระบบเพื่อใช้งานเต็มรูปแบบ</p>
+
+            <a
+              href=""
+              class="w-[245px] h-full grid place-content-center bg-[#3E5685] rounded-lg text-white"
+              ><p>โปรดเข้าสู่ระบบ</p></a
+            >
+          </div>
+          <div
+            id="informUser"
+            class="p-5 flex flex-col gap-[19px] text-2xl border border-[#E1E1E1] rounded-lg"
+          >
+            <p class="font-semibold">กรอกข้อมูล</p>
+            <label for="" class="font-medium">ข้อมูลผู้ขับขี่</label>
+            <input
+              type="text"
+              placeholder="ชื่อจริง"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
+            />
+            <input
+              type="text"
+              placeholder="นามสกุล"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
+            />
+            <input
+              type="email"
+              placeholder="อีเมล์"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
+            />
+            <input
+              type="text"
+              placeholder="จุดประสงค์ในการใช้รถ"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
+            />
+            <input
+              type="text"
+              placeholder="ข้อมูลเพิ่มเติม (ถ้ามี)"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
+            />
+          </div>
+          <div
+            id="hire"
+            class="mt-6 p-5 h-[134px] grid grid-cols-1 grid-rows-2 border border-[#E1E1E1] rounded-lg"
+          >
+            <div>
+              <input type="checkbox" class="h-5 w-5" />
+              <label for="" class="text-lg"
+                >กรุณาตรวจสอบข้อมูลการเช่าให้ครบถ้วนก่อนการกดยืนยัน</label
+              >
+            </div>
+            <a
+              href="./checkOut2.html"
+              class="mx-5 h-[50px] bg-[#3E5685] rounded-lg text-white text-2xl flex justify-center"
+              ><input type="button" value="เช่ารถคันนี้" class="cursor-pointer"
+            /></a>
+          </div>
+        </div>
+        <div
+          id="summaryTask"
+          class="w-[366px] h-fit border border-[#E1E1E1] rounded-lg p-4"
+        >
+          <p class="text-2xl mb-[25px]">สรุปการเช่ารถ</p>
+          <div class="flex">
+            <img
+              src="./assets/default_img_sum.jfif"
+              alt=""
+              class="w-[170px] h-[106px] mr-[11px] border border-[#E1E1E1] rounded-lg"
+            />
+            <div>
+              <p class="font-semibold">NEW PORCHE 718 BOXSTER</p>
+              <p class="text-[##848484]">Sports</p>
+            </div>
+          </div>
+          <div id="statusCar " class="relative mb-6">
+            <div id="pickUp" class="mt-[11px] flex items-center">
+              <div
+                class="h-[38px] w-[38px] mr-[29px] bg-[#3E5685] rounded-full grid place-content-center"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div class="leading-tight">
+                <span class="text-[#848484]">รับรถ</span
+                ><br />สนามบินดอนเมือง<br />12/07/2024 <br />09.00 น.
+              </div>
+            </div>
+            <div
+              class="absolute w-[2px] h-[63px] left-[18px] top-[57px] bg-[#3E5685]"
+            ></div>
+            <div
+              class="absolute w-[10px] left-[11px] top-[115px] border border-solid border-t-[2px] border-r-[2px] rotate-45 border-[#3E5685]"
+            ></div>
+            <div
+              class="absolute w-[10px] left-[17px] top-[115px] border border-solid border-t-[2px] border-r-[2px] -rotate-45 border-[#3E5685]"
+            ></div>
+            <div id="return" class="flex mt-[27px]">
+              <div
+                class="h-[38px] w-[38px] mt-[15px] mr-[29px] bg-[#3E5685] rounded-full grid place-content-center"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div class="leading-tight">
+                <span class="text-[#848484]">คืนรถ</span
+                ><br />สนามบินดอนเมือง<br />12/07/2024 <br />09.00 น.
+              </div>
+            </div>
+          </div>
+          <div
+            id="sum"
+            class="flex justify-between mt-2 p-[7px] text text-xl font-bold border-t-[1px]"
+          >
+            <p>รวมทั้งสิ้น</p>
+            <p>฿30,000/วัน</p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

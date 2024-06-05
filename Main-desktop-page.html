@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/champ.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-4 ">
+        555555555
+        <!-- Car Image and Slideshow -->
+        <div class="relative p-4 shadow rounded w-flex overflow-hidden h-flex">
+            <div class="carousel-item active">
+                <img src="Assets/carModel/Audi.jpg" alt="Audi" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/BMW.jpg" alt="BMW" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/JAGUAR-XF.jpg" alt="JAGUAR" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/LandRover.jpg" alt="LandRover" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Mercedes-Benz.jpg" alt="Mercedes-Benz"
+                    class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/mini.jpg" alt="mini" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Peugeot.jpg" alt="Peugeot" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Porsche.jpg" alt="Porsche" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Tesla-Model-Y-RWD.jpg" alt="Tesla-Model-Y-RWD"
+                    class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Volkswagen.jpg" alt="Volkswagen" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/carModel/Volvo.jpg" alt="Volvo" class="w-full h-full object-cover rounded">
+            </div>
+            <button onclick="prevSlide()"
+                class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">Prev</button>
+            <button onclick="nextSlide()"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">Next</button>
+        </div>
+
+        <!-- Car Brands -->
+        <div class="w-full overflow-x-auto whitespace-nowrap mt-4 p-4 shadow rounded">
+            <h2 class="text-xl font-bold mb-2 ">ยี่ห้อรถยนต์ทั้งหมด</h2>
+            <div class="flex justify-between  ">
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/audi-logo.jpg" alt="Audi" class="h-24 "></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/BMW.jpg" alt="BMW" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Jaguar.jpg" alt="Jaguar" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Land-Rover.jpg" alt="Land-Rover" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Mercedes-Benz.jpg" alt="Mercedes-Benz" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Mini-logo.jpg" alt="Mini" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0 "><img src="Assets/logo/Perugueot.jpg" alt="Perugueot" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/PORSCHE-logo.jpg" alt="Porsche" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Volkswagen.jpg" alt="Volkswagen" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Volvo-logo.jpg" alt="Volvo" class="h-24"></div>
+                <div class="p-2 shadow rounded-xl flex-shrink-0"><img src="Assets/logo/Tesla-logo.jpg" alt="Tesla" class="h-24"></div>
+            </div>
+        </div>
+
+<!------------------------------ Destop --------------------------------------------------------------->
+
+        <div class="md:flex md:flex-col hidden">
+        <section class="mt-4 bg-white p-4 shadow rounded ">
+            <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
+            <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover "></span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover "></span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover "></span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section class="mt-4 bg-white p-4 shadow rounded ">
+            <h2 class="text-xl font-bold mb-2">โปรโมชั่น</h2>
+            <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- New Cars Section -->
+        <section class="mt-4 bg-white p-4 shadow rounded ">
+            <h2 class="text-xl font-bold mb-2">มาใหม่</h2>
+            <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+                <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                    <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+
+                        <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                            class="w-full h-full object-cover ">
+                        <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                    </span>
+                    </div>
+                    <div class="px-6 py-4 text-center">
+                        <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                        <p class="text-white text-base">
+                            Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
+
+
+<!------------------------------ Mobile --------------------------------------------------------------->
+    <div class="flex md:hidden">
+        <div >
+            <div class="inline-flex space-x-2">
+                <button id="button1" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">แนะนำประจำวัน</button>
+                <button id="button2" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">โปรโมชั่น</button>
+                <button id="button3" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">มาใหม่</button>
+            </div>
+            <section id="toggleSection1" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                    class="w-full h-full object-cover "></span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                    class="w-full h-full object-cover "></span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section id="toggleSection2" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">โปรโมชั่น</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="toggleSection3" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">มาใหม่</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.toggle-btn');
+                var sections = [
+                    document.getElementById('toggleSection1'),
+                    document.getElementById('toggleSection2'),
+                    document.getElementById('toggleSection3')
+                ];
+    
+                buttons.forEach((button, index) => {
+                    button.addEventListener('click', function() {
+                        var isActive = button.classList.contains('bg-green-500');
+                        buttons.forEach(btn => btn.classList.remove('bg-green-500', 'text-white'));
+                        sections.forEach(sec => sec.classList.add('hidden'));
+    
+                        if (!isActive) {
+                            button.classList.add('bg-green-500', 'text-white');
+                            sections[index].classList.remove('hidden');
+                        } else {
+                            button.classList.remove('bg-green-500', 'text-white');
+                            sections[index].classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+
+            <!-- Why Us Section -->
+            <section class="mt-4 bg-white p-4 shadow rounded">
+                <h2 class="text-xl font-bold mb-2">ทำไมต้องใช้บริการกับเรา?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Habitant tincidunt id quis mattis. Dui eget vitae potenti mattis
+                    est.</p>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-color">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur. Habitant tincidunt id quis mattis. Dui eget vitae
+            potenti mattis est.</p>
+    </footer>
+
+    <script src="Main-desktop-script.js"></script>
+</body>
+
+</html>
